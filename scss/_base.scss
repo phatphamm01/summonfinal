@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: Childrensalon-Icons;
+  src: url(https://cdn.childrensalon.com/build/website/fonts/font/Childrensalon-Icons_v1611129127.540c1bbe.woff2)
+      format("woff2"),
+    url(https://cdn.childrensalon.com/build/website/fonts/font/Childrensalon-Icons_v1611129127.09606815.woff)
+      format("woff");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1b1b1a;
+  font: 12px/1.286 Poppins;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+*:not(use) {
+  color: #1b1b1a;
+}
+
+.active-menu .swipe-menu-wrapper {
+  transform: translate(0);
+}
+
+use {
+  pointer-events: none;
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+}
+
+.btn {
+  padding: 1.6rem 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #444444;
+  background-color: white;
+}
+
+button,
+input,
+select,
+textarea {
+  font: 16px/1.286 Poppins, NotoNaskhArabicUI, sans-serif;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+.input-text,
+select,
+textarea {
+  display: block;
+  color: #1b1b1a;
+  border-radius: 0;
+  background: #fff;
+  width: 100%;
+  font-size: 16px;
+  height: 48px;
+  padding: 10px 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: inset 0 0 3px #e8e8e8;
+  border: 1px solid #d1d1d1;
+}
+
+.f-cols {
+  border-top: 1px solid #e8e8e8;
+  max-width: 1571px;
+  margin: 0 auto;
+  padding: 3.15em 1.25em 1.1875em;
+}
+
+.form-cols .btn-col {
+  position: relative;
+  box-shadow: inset 0 0 3px #e8e8e8;
+  border: 1px solid black;
+  line-height: 0;
+  transition: background 100ms ease-in;
+
+  .btn {
+    background-color: black;
+    transition: background 100ms ease-in;
+
+    svg {
+      color: #d1d1d1;
+    }
+  }
+
+  &:hover {
+    .btn {
+      background-color: transparent;
+      svg {
+        color: black;
+      }
+    }
+  }
+}
+
+.input-box input {
+  line-height: 1.625;
+  border-right: 0 !important;
+}

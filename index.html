@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="./tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="fixed top-0 right-0 left-0 z-50">
+      <div class="header relative">
+        <div class="mt-14 text-2xl text-secondary">
+          <div class="">
+            <picture class="cs-picture lazyloaded"
+              ><img
+                data-srcset="./logo.svg 560w"
+                src="./logo.svg"
+                id="logo"
+                class="h-20 absolute left-1/2 transform -translate-x-1/2"
+                alt=""
+                srcset="./logo.svg 560w"
+            /></picture>
+          </div>
+          <div class="flex justify-between mx-20 text-xl font-medium">
+            <div class="flex gap-10">
+              <a
+                class="flex flex-col items-center gap-3"
+                href="/customer/account/login/"
+              >
+                <svg class="icon-cus lazyloaded h-9 w-9" data-click="open-menu">
+                  <use xlink:href="./icon.svg#svgs-account"></use>
+                </svg>
+                <span class="label mobile-hide uppercase">Sign In</span>
+              </a>
+
+              <a href="/help/" class="flex flex-col items-center gap-3">
+                <svg class="icon-cus lazyloaded h-9 w-9" data-cs="svgLoader">
+                  <use xlink:href="./icon.svg#svgs-help-main"></use>
+                </svg>
+                <span class="label mobile-hide uppercase">Help</span>
+              </a>
+            </div>
+
+            <div class="flex gap-10 float-end">
+              <a class="flex items-center gap-3" href="/wishlist">
+                <!-- <span class="badge j-wishlist-add-to-mobile-block">2</span> -->
+                <svg class="icon-cus lazyloaded h-9 w-9" data-cs="svgLoader">
+                  <use xlink:href="./icon.svg#svgs-wish-main"></use>
+                </svg>
+                <span class="dropdown-link-label">
+                  Wishlist
+                  <strong class="block">2 items</strong>
+                </span>
+              </a>
+              <a
+                class="flex items-center gap-3"
+                href="https://www.childrensalon.com/checkout/cart/"
+                id="btn_shopping_bag"
+              >
+                <!-- <span class="badge j-cart-add-to-mobile-block">1</span> -->
+
+                <svg class="icon-cus lazyloaded h-9 w-9" data-cs="svgLoader">
+                  <use xlink:href="./icon.svg#svgs-bag"></use>
+                </svg>
+                <span class="">
+                  Shopping Bag
+                  <strong class="block">1 item</strong>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto mt-12 mb-5 hidden sm:block">
+        <div class="flex justify-center">
+          <ul class="nav-list flex list-unstyled gap-8">
+            <li class="nav__item">
+              <span class="nav__item-text uppercase">What's new</span>
+            </li>
+            <li class="nav__item">
+              <span class="nav__item-text uppercase pb-2">Baby</span>
+              <div class="absolute left-0 right-0 mt-5 nav nav-out">
+                <div class="w-full">
+                  <div class="lg:container mx-auto">
+                    <div class="grid grid-cols-12 xl:mx-16">
+                      <div class="mt-24 mb-16 col-span-5">
+                        <p class="title mtitle" data-title="By Category">
+                          By Product
+                        </p>
+                        <div class="dropdown-links md:ml-4 xl:ml-16">
+                          <a
+                            class="category-level-2"
+                            href="/baby/baby-accessories"
+                            rel="nofollow"
+                          >
+                            Baby Accessories</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/baby-bags"
+                            rel="nofollow"
+                          >
+                            Baby Bags</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/baby-care"
+                            rel="nofollow"
+                          >
+                            Baby Care</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/baby-gifts-toys"
+                            rel="nofollow"
+                          >
+                            Baby Gifts &amp; Toys</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/baby-nests-sleepbags"
+                            rel="nofollow"
+                          >
+                            Baby Nests &amp; Sleepbags</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/baby-outfits"
+                            rel="nofollow"
+                          >
+                            Baby Outfits</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/babysuits"
+                            rel="nofollow"
+                          >
+                            Babysuits</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/blankets-shawls"
+                            rel="nofollow"
+                          >
+                            Blankets &amp; Shawls</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/carnival-party-costumes"
+                            rel="nofollow"
+                          >
+                            Carnival &amp; Party Costumes</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/christening-baptism"
+                            rel="nofollow"
+                          >
+                            Christening &amp; Baptism</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/coats-outerwear"
+                            rel="nofollow"
+                          >
+                            Coats &amp; Outerwear</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/dresses-skirts"
+                            rel="nofollow"
+                          >
+                            Dresses &amp; Skirts</a
+                          >
+                        </div>
+                        <div class="dropdown-links jm-dropdown-links">
+                          <a
+                            class="category-level-2"
+                            href="/baby/hats"
+                            rel="nofollow"
+                          >
+                            Hats</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/multipacks"
+                            rel="nofollow"
+                          >
+                            Multipacks</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/nightwear-underwear"
+                            rel="nofollow"
+                          >
+                            Nightwear &amp; Underwear</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/pushchairs"
+                            rel="nofollow"
+                          >
+                            Pushchairs</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/shoes/baby-toddler"
+                            rel="nofollow"
+                          >
+                            Shoes</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/swimwear"
+                            rel="nofollow"
+                          >
+                            Swimwear</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/tops"
+                            rel="nofollow"
+                          >
+                            Tops</a
+                          >
+                          <a
+                            class="category-level-2"
+                            href="/baby/trousers-shorts"
+                            rel="nofollow"
+                          >
+                            Trousers &amp; Shorts</a
+                          >
+                        </div>
+                      </div>
+                      <div class="mt-24 mb-16 col-span-2 border-l-2">
+                        <p
+                          class="title mtitle md:ml-4 xl:ml-16"
+                          data-title="page.navigation_menu.age_filter_title"
+                        >
+                          By Age
+                        </p>
+                        <div class="md:ml-4 xl:ml-16 dropdown-links">
+                          <a
+                            href="https://www.childrensalon.com/baby?f=1013"
+                            rel="nofollow"
+                          >
+                            Premature
+                          </a>
+                          <a
+                            href="https://www.childrensalon.com/baby?f=1007"
+                            rel="nofollow"
+                          >
+                            0 mth
+                          </a>
+                          <a
+                            href="https://www.childrensalon.com/baby?f=1008"
+                            rel="nofollow"
+                          >
+                            1 mth
+                          </a>
+                          <a
+                            href="https://www.childrensalon.com/baby?f=1011"
+                            rel="nofollow"
+                          >
+                            3 mth
+                          </a>
+                          <a
+                            href="https://www.childrensalon.com/baby?f=1015"
+                            rel="nofollow"
+                          >
+                            6 mth
+                          </a>
+                          <a
+                            href="https://www.childrensalon.com/baby?f=1014"
+                            rel="nofollow"
+                          >
+                            9 mth
+                          </a>
+                          <a
+                            href="https://www.childrensalon.com/baby?f=1035"
+                            rel="nofollow"
+                          >
+                            12 mth
+                          </a>
+                          <a
+                            href="https://www.childrensalon.com/baby?f=1033"
+                            rel="nofollow"
+                          >
+                            18 mth
+                          </a>
+                          <a
+                            href="https://www.childrensalon.com/baby?f=1012"
+                            rel="nofollow"
+                          >
+                            2 yr
+                          </a>
+                          <a
+                            class="view-all-link"
+                            href="https://www.childrensalon.com/baby"
+                            data-title="View all"
+                          >
+                            View All
+                          </a>
+                        </div>
+                      </div>
+                      <div class="mt-24 mb-16 col-span-2 border-l-2">
+                        <p class="title mtitle">Discover</p>
+                        <div class="md:ml-4 xl:ml-16 dropdown-links">
+                          <a href="/christening-baptism" rel="nofollow">
+                            Christening &amp; Baptism</a
+                          >
+                          <a href="/special-occasion" rel="nofollow">
+                            Special Occasion</a
+                          >
+                          <a href="/into-the-woods" rel="nofollow">
+                            Into the Woods</a
+                          >
+                          <a href="/snow-shop" rel="nofollow"> Snow</a>
+                          <a href="/everyday-essentials" rel="nofollow">
+                            Everyday Essentials</a
+                          >
+                          <a href="/earth-friendly" rel="nofollow">
+                            Earth Friendly</a
+                          >
+                          <a href="/summer-shop/baby" rel="nofollow"> Summer</a>
+                          <a href="/wedding" rel="nofollow"> Wedding</a>
+                          <a href="/spotlight-on-spain" rel="nofollow">
+                            Spotlight on Spain</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-span-3 2xl:px-20">
+                        <a
+                          class="menu-banner mobile-hide"
+                          href="https://www.childrensalon.com/designer/childrensalon-essentials"
+                        >
+                          <img
+                            alt=""
+                            class="lazyautosizes ls-is-cached lazyloaded"
+                            data-srcset="./baby.jpg 730w"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            width="0"
+                            height="null"
+                            sizes="271px"
+                            srcset="./baby.jpg 365w"
+                          />
+                          <span
+                            class="menu-banner-text"
+                            style="color: #000000; font-size: 1.6em"
+                            >Childrensalon Essentials</span
+                          >
+                          <span class="menu-banner-shop">Shop Now</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item">
+              <span class="nav__item-text uppercase pb-2">Girl</span>
+            </li>
+            <li class="nav__item">
+              <span class="nav__item-text uppercase pb-2">Boy</span>
+            </li>
+            <li class="nav__item">
+              <span class="nav__item-text uppercase pb-2">Teen</span>
+            </li>
+            <li class="nav__item">
+              <span class="nav__item-text uppercase pb-2">Designer</span>
+            </li>
+            <li class="nav__item">
+              <span class="nav__item-text uppercase pb-2">Shoes</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="msub-nav sm:hidden flex">
+        <li><a class="color-black" href="/new-in/">What's New</a></li>
+        <li><a class="color-black" href="/designer/">Designers</a></li>
+        <li><a class="color-black" href="/lifestyle">Lifestyle</a></li>
+      </ul>
+    </header>
+    <main class="wrapper" id="main" data-click="close-menu">
+      <!-- Banner -->
+      <div class="banner">
+        <div class="relative">
+          <img
+            src="https://cdn.childrensalon.com/media/cms/cache/1920x600/h/o/home-hero-desktop-ma8k0xk7yaswsk88wcsgkkg4.webp"
+            alt=""
+            class="w-full"
+          />
+          <div class="absolute top-0 bottom-0 left-0 right-0">
+            <div
+              class="
+                info-block-inner
+                h-full
+                w-full
+                flex flex-col
+                justify-center
+                items-center
+              "
+            >
+              <h1 class="banner__title mb-3 font-medium">Spotlight on Spain</h1>
+              <div class="w-1/2 xl:w-1/4 font-light text-center text-2xl mb-10">
+                <p class="text-white">
+                  This season, we’re shining the spotlight on our Spanish
+                  designers! From family-run labels to artisan makers, discover
+                  the brands bringing a little Mediterranean craftsmanship to
+                  your door.
+                </p>
+              </div>
+              <div class="btn-wrap">
+                <span class="btn"><span>Discover the Collections</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Banner -->
+
+      <!-- Directlinks -->
+      <div class="directlinks mt-20">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-4 gap-10">
+            <div class="col-3">
+              <picture class="cs-picture lazyload-block">
+                <source
+                  type="image/webp"
+                  data-srcset="https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.webp 366w, https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.webp 732w, https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.webp 310w, https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.webp 620w"
+                  sizes="366px"
+                  srcset="
+                    https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.webp 366w,
+                    https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.webp 732w,
+                    https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.webp 310w,
+                    https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.webp 620w
+                  "
+                />
+                <img
+                  data-srcset="https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.jpg 366w, https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.jpg 732w, https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.jpg 310w, https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.jpg 620w"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  class="w-full"
+                  alt=""
+                  data-sizes="auto"
+                  width="366"
+                  height="401"
+                  sizes="366px"
+                  srcset="
+                    https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.jpg 366w,
+                    https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.jpg 732w,
+                    https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.jpg 310w,
+                    https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-girl-906x800-aqgtf8s4j6884o8g48oo4ockc.jpg 620w
+                  "
+                />
+              </picture>
+              <h2 class="directlinks__title">SHOP GIRL</h2>
+            </div>
+            <div class="col-3">
+              <picture class="cs-picture lazyload-block">
+                <source
+                  type="image/webp"
+                  data-srcset="https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.webp 366w, https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.webp 732w, https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.webp 310w, https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.webp 620w"
+                  sizes="366px"
+                  srcset="
+                    https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.webp 366w,
+                    https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.webp 732w,
+                    https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.webp 310w,
+                    https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.webp 620w
+                  "
+                />
+                <img
+                  data-srcset="https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.jpg 366w, https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.jpg 732w, https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.jpg 310w, https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.jpg 620w"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  class="w-full"
+                  alt=""
+                  data-sizes="auto"
+                  width="366"
+                  height="401"
+                  sizes="366px"
+                  srcset="
+                    https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.jpg 366w,
+                    https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.jpg 732w,
+                    https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.jpg 310w,
+                    https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-boy-906x800-7692x1k1z94wwokkgw4c44g4w.jpg 620w
+                  "
+                />
+              </picture>
+              <h2 class="directlinks__title">SHOP BOY</h2>
+            </div>
+            <div class="col-3">
+              <picture class="cs-picture lazyload-block">
+                <source
+                  type="image/webp"
+                  data-srcset="https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.webp 366w, https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.webp 732w, https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.webp 310w, https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.webp 620w"
+                  sizes="366px"
+                  srcset="
+                    https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.webp 366w,
+                    https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.webp 732w,
+                    https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.webp 310w,
+                    https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.webp 620w
+                  "
+                />
+                <img
+                  data-srcset="https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.jpg 366w, https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.jpg 732w, https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.jpg 310w, https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.jpg 620w"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  class="w-full"
+                  alt=""
+                  data-sizes="auto"
+                  width="366"
+                  height="401"
+                  sizes="366px"
+                  srcset="
+                    https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.jpg 366w,
+                    https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.jpg 732w,
+                    https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.jpg 310w,
+                    https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-baby-906x800-6w612msk23k0o84gkggssosk8.jpg 620w
+                  "
+                />
+              </picture>
+              <h2 class="directlinks__title">SHOP BABY</h2>
+            </div>
+            <div class="col-3">
+              <picture class="cs-picture lazyload-block">
+                <source
+                  type="image/webp"
+                  data-srcset="https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.webp 366w, https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.webp 732w, https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.webp 310w, https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.webp 620w"
+                  sizes="366px"
+                  srcset="
+                    https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.webp 366w,
+                    https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.webp 732w,
+                    https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.webp 310w,
+                    https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.webp 620w
+                  "
+                />
+                <img
+                  data-srcset="https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.jpg 366w, https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.jpg 732w, https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.jpg 310w, https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.jpg 620w"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  class="w-full"
+                  alt=""
+                  data-sizes="auto"
+                  width="366"
+                  height="401"
+                  sizes="366px"
+                  srcset="
+                    https://cdn.childrensalon.com/media/cms/cache/366x366/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.jpg 366w,
+                    https://cdn.childrensalon.com/media/cms/cache/732x732/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.jpg 732w,
+                    https://cdn.childrensalon.com/media/cms/cache/310x310/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.jpg 310w,
+                    https://cdn.childrensalon.com/media/cms/cache/620x620/s/h/shop-shoes-906x800-103o80uudaa8ckcgsgsoskosc.jpg 620w
+                  "
+                />
+              </picture>
+              <h2 class="directlinks__title">SHOP SHOES</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="container mx-auto mt-40">
+        <a
+          href="https://www.childrensalon.com/snow-shop"
+          class="relative w-full h-full block"
+        >
+          <div
+            class="img-container"
+            data-note="Molo, Boy Hat NA / Snowsuit NA // Girl, Hat 389340 / Snowsuit 389326 / Mittens 389324"
+          >
+            <picture class="cs-picture lazyload-block">
+              <source
+                media="(min-width: 1367px)"
+                type="image/webp"
+                data-srcset="https://cdn.childrensalon.com/media/cms/cache/1536x494/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.webp 1536w, https://cdn.childrensalon.com/media/cms/cache/3072x988/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.webp 3072w"
+                sizes="1536px"
+                srcset="
+                  https://cdn.childrensalon.com/media/cms/cache/1536x494/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.webp 1536w,
+                  https://cdn.childrensalon.com/media/cms/cache/3072x988/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.webp 3072w
+                "
+              />
+              <source
+                media="(min-width: 1367px)"
+                data-srcset="https://cdn.childrensalon.com/media/cms/cache/1536x494/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.jpg 1536w, https://cdn.childrensalon.com/media/cms/cache/3072x988/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.jpg 3072w"
+                sizes="1536px"
+                srcset="
+                  https://cdn.childrensalon.com/media/cms/cache/1536x494/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.jpg 1536w,
+                  https://cdn.childrensalon.com/media/cms/cache/3072x988/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.jpg 3072w
+                "
+              />
+              <source
+                media="(min-width: 1024px)"
+                type="image/webp"
+                data-srcset="https://cdn.childrensalon.com/media/cms/cache/1302x403/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.webp 1302w, https://cdn.childrensalon.com/media/cms/cache/2604x806/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.webp 2604w"
+                sizes="1536px"
+                srcset="
+                  https://cdn.childrensalon.com/media/cms/cache/1302x403/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.webp 1302w,
+                  https://cdn.childrensalon.com/media/cms/cache/2604x806/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.webp 2604w
+                "
+              />
+              <source
+                media="(min-width: 1024px)"
+                data-srcset="https://cdn.childrensalon.com/media/cms/cache/1302x403/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.jpg 1302w, https://cdn.childrensalon.com/media/cms/cache/2604x806/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.jpg 2604w"
+                sizes="1536px"
+                srcset="
+                  https://cdn.childrensalon.com/media/cms/cache/1302x403/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.jpg 1302w,
+                  https://cdn.childrensalon.com/media/cms/cache/2604x806/t/r/trend-desktop-1uv1m6cla2ysccosckso0cgg8.jpg 2604w
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                type="image/webp"
+                data-srcset="https://cdn.childrensalon.com/media/cms/cache/960x390/t/r/trend-tablet-32lbppf77zqc80gos0ccc8wos.webp 960w, https://cdn.childrensalon.com/media/cms/cache/1920x780/t/r/trend-tablet-32lbppf77zqc80gos0ccc8wos.webp 1920w"
+                sizes="1536px"
+                srcset="
+                  https://cdn.childrensalon.com/media/cms/cache/960x390/t/r/trend-tablet-32lbppf77zqc80gos0ccc8wos.webp   960w,
+                  https://cdn.childrensalon.com/media/cms/cache/1920x780/t/r/trend-tablet-32lbppf77zqc80gos0ccc8wos.webp 1920w
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                data-srcset="https://cdn.childrensalon.com/media/cms/cache/960x390/t/r/trend-tablet-32lbppf77zqc80gos0ccc8wos.jpg 960w, https://cdn.childrensalon.com/media/cms/cache/1920x780/t/r/trend-tablet-32lbppf77zqc80gos0ccc8wos.jpg 1920w"
+                sizes="1536px"
+                srcset="
+                  https://cdn.childrensalon.com/media/cms/cache/960x390/t/r/trend-tablet-32lbppf77zqc80gos0ccc8wos.jpg   960w,
+                  https://cdn.childrensalon.com/media/cms/cache/1920x780/t/r/trend-tablet-32lbppf77zqc80gos0ccc8wos.jpg 1920w
+                "
+              />
+              <source
+                type="image/webp"
+                data-srcset="https://cdn.childrensalon.com/media/cms/cache/750x800/t/r/trend-mobile-94swb3uk7f8ccgockc88gck0g.webp 750w"
+                sizes="1536px"
+                srcset="
+                  https://cdn.childrensalon.com/media/cms/cache/750x800/t/r/trend-mobile-94swb3uk7f8ccgockc88gck0g.webp 750w
+                "
+              />
+              <img
+                data-srcset="https://cdn.childrensalon.com/media/cms/cache/750x800/t/r/trend-mobile-94swb3uk7f8ccgockc88gck0g.jpg 750w"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                class="lazyautosizes ls-is-cached lazyloaded"
+                alt=""
+                data-sizes="auto"
+                width="1536"
+                height="493"
+                sizes="1536px"
+                srcset="
+                  https://cdn.childrensalon.com/media/cms/cache/750x800/t/r/trend-mobile-94swb3uk7f8ccgockc88gck0g.jpg 750w
+                "
+              />
+            </picture>
+          </div>
+          <div class="absolute top-0 bottom-0 right-0 left-0">
+            <div
+              class="
+                absolute
+                top-1/2
+                left-1/2
+                transform
+                translate-x-1/2
+                -translate-y-1/2
+                bg-white
+                py-14
+                px-16
+                w-3/10
+              "
+            >
+              <h2 class="text-4xl font-medium mb-4">The Snow Shop</h2>
+              <div class="text-2xl font-light mb-4">
+                <p>
+                  Explore all things warm, wintry and weatherproof. And when the
+                  cold weather arrives, all that’s left to do is layer up and
+                  have fun!
+                </p>
+              </div>
+              <span
+                class="
+                  text-2xl
+                  font-light
+                  uppercase
+                  pb-2
+                  border-b-2 border-black
+                "
+                >SHOP SNOW</span
+              >
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="slider container mx-auto mt-40">
+        <ul class="slider-list grid grid-cols-5 gap-20">
+          <li class="slider-item">
+            <a
+              href="https://www.childrensalon.com/molo-boys-grey-leopard-snowsuit-389326.html"
+              data-event-action="W2 - Feature Products"
+              data-event-label="389326"
+            >
+              <div class="image">
+                <img
+                  class="lazyloaded w-full"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  data-srcset="https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/256x256/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 1x, https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/512x512/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 2x"
+                  alt=""
+                  srcset="
+                    https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/256x256/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 1x,
+                    https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/512x512/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 2x
+                  "
+                />
+              </div>
+              <div class="name text-center mt-4 text-2xl">
+                <span>Boys Grey Leopard Snowsuit</span>
+              </div>
+              <div class="mt-4 text-center text-2xl font-bold">
+                <span class="regular-price">
+                  <span class="price"> £209.00 </span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li class="slider-item">
+            <a
+              href="https://www.childrensalon.com/molo-boys-grey-leopard-snowsuit-389326.html"
+              data-event-action="W2 - Feature Products"
+              data-event-label="389326"
+            >
+              <div class="image">
+                <img
+                  class="lazyloaded w-full"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  data-srcset="https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/256x256/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 1x, https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/512x512/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 2x"
+                  alt=""
+                  srcset="
+                    https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/256x256/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 1x,
+                    https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/512x512/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 2x
+                  "
+                />
+              </div>
+              <div class="name text-center mt-4 text-2xl">
+                <span>Boys Grey Leopard Snowsuit</span>
+              </div>
+              <div class="mt-4 text-center text-2xl font-bold">
+                <span class="regular-price">
+                  <span class="price"> £209.00 </span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li class="slider-item">
+            <a
+              href="https://www.childrensalon.com/molo-boys-grey-leopard-snowsuit-389326.html"
+              data-event-action="W2 - Feature Products"
+              data-event-label="389326"
+            >
+              <div class="image">
+                <img
+                  class="lazyloaded w-full"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  data-srcset="https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/256x256/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 1x, https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/512x512/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 2x"
+                  alt=""
+                  srcset="
+                    https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/256x256/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 1x,
+                    https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/512x512/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 2x
+                  "
+                />
+              </div>
+              <div class="name text-center mt-4 text-2xl">
+                <span>Boys Grey Leopard Snowsuit</span>
+              </div>
+              <div class="mt-4 text-center text-2xl font-bold">
+                <span class="regular-price">
+                  <span class="price"> £209.00 </span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li class="slider-item">
+            <a
+              href="https://www.childrensalon.com/molo-boys-grey-leopard-snowsuit-389326.html"
+              data-event-action="W2 - Feature Products"
+              data-event-label="389326"
+            >
+              <div class="image">
+                <img
+                  class="lazyloaded w-full"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  data-srcset="https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/256x256/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 1x, https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/512x512/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 2x"
+                  alt=""
+                  srcset="
+                    https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/256x256/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 1x,
+                    https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/512x512/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 2x
+                  "
+                />
+              </div>
+              <div class="name text-center mt-4 text-2xl">
+                <span>Boys Grey Leopard Snowsuit</span>
+              </div>
+              <div class="mt-4 text-center text-2xl font-bold">
+                <span class="regular-price">
+                  <span class="price"> £209.00 </span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li class="slider-item">
+            <a
+              href="https://www.childrensalon.com/molo-boys-grey-leopard-snowsuit-389326.html"
+              data-event-action="W2 - Feature Products"
+              data-event-label="389326"
+            >
+              <div class="image">
+                <img
+                  class="lazyloaded w-full"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  data-srcset="https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/256x256/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 1x, https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/512x512/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 2x"
+                  alt=""
+                  srcset="
+                    https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/256x256/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 1x,
+                    https://cdn.childrensalon.com/media/catalog/product/cache/0/small_image/512x512/9df78eab33525d08d6e5fb8d27136e95/m/o/molo-boys-grey-leopard-snowsuit-389326-2514fe29ae8ecf2c93548f924286a90a2180cd3f.jpg 2x
+                  "
+                />
+              </div>
+              <div class="name text-center mt-4 text-2xl">
+                <span>Boys Grey Leopard Snowsuit</span>
+              </div>
+              <div class="mt-4 text-center text-2xl font-bold">
+                <span class="regular-price">
+                  <span class="price"> £209.00 </span>
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="testimonial container mx-auto mt-40">
+        <div class="mb-10">
+          <svg
+            style="color: #ea5a99"
+            data-cs="svgLoader"
+            class="lazyloaded mx-auto h-16"
+          >
+            <use xlink:href="./icon.svg#svgs-sticker--stars"></use>
+          </svg>
+        </div>
+        <h2 class="text-center lp-title text-5xl font-bold mb-16">
+          We love hearing from you...
+        </h2>
+        <div class="grid grid-cols-3 gap-60">
+          <div class="text-center">
+            <div class="copy font-light text-2/3xl">
+              <p>
+                “I just received the package thank you so much for tacking time
+                out to reach out to me. And for the candy in the pockage. Your
+                service is beyond my expectations. Thanks for your
+                service.&nbsp;&nbsp;”
+              </p>
+            </div>
+            <div class="name uppercase font-medium mt-4 text-2xl">Tricia</div>
+            <div class="text-xl">United States</div>
+          </div>
+          <div class="text-center">
+            <div class="copy font-light text-2/3xl">
+              <p>
+                “I was impressed with your customer service. I recently ordered
+                on Sunday and received my order the next day! Super fast and the
+                haribos were a nice touch.”
+              </p>
+            </div>
+            <div class="name uppercase font-medium mt-4 text-2xl">Stacey</div>
+            <div class="text-xl">United Kingdom</div>
+          </div>
+          <div class="text-center">
+            <div class="copy font-light text-2/3xl">
+              <p></p>
+              <p>
+                “Thank you very much and thanks to your great team of employees,
+                one of the best online shops with communication between
+                customers and employees.&nbsp;”
+              </p>
+            </div>
+            <div class="name uppercase font-medium mt-4 text-2xl">Omar</div>
+            <div class="text-xl">United Arab Emirates</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-container container mx-auto mt-40">
+      <div class="hidden">
+        <a class="footer-btn" href="tel:+44 1892 779110">
+          <svg data-cs="svgLoader" class="lazyload">
+            <use xlink:href="./icon.svg#svgs-phone"></use>
+          </svg>
+          <span>Contact Customer Service</span>
+        </a>
+        <a
+          href="/contact-us/#liveChat"
+          rel="noopener"
+          class="footer-btn"
+          data-cs="ZendeskChatLink"
+          target="_blank"
+        >
+          <svg class="icon-message lazyload" data-cs="svgLoader">
+            <use xlink:href="./icon.svg#svgs-live-chat-double"></use>
+          </svg>
+          <span>Live Chat</span>
+        </a>
+      </div>
+      <div class="f-cols hidden lg:grid grid-cols-4 gap-36">
+        <div class="f-col">
+          <h3>Customer service</h3>
+          <ul class="f-col-content">
+            <li><a href="/contact-us/">Contact Us</a></li>
+            <li>
+              <a
+                href="https://www.childrensalon.com/delivery-returns"
+                class="delivery-returns"
+                >Delivery &amp; Returns</a
+              >
+            </li>
+            <li><a href="/size-guide/">Size Guide</a></li>
+            <li><a href="/customer-feedback/">Customer Feedback</a></li>
+            <li><a href="/help/">Help</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h3>
+            <a
+              href="https://www.childrensalon.com/contact-us/"
+              class="j-contact-us"
+              >Contact Us</a
+            >
+          </h3>
+          <div class="f-col-content">
+            <p>
+              <a
+                href="/contact-us/#liveChat"
+                rel="noopener"
+                class="f-col-livechat"
+                data-cs="ZendeskChatLink"
+                target="_blank"
+              >
+                <span class="f-col-subtitle">Live Chat</span><br />
+                Chat to Customer Service
+              </a>
+            </p>
+            <p>
+              <span class="f-col-subtitle">Call Us</span><br />
+              Need help? Give us a call.
+            </p>
+            <ul class="phone-list">
+              <li>
+                UK:
+                <a class="nobr" href="tel:01892-779-110" dir="ltr"
+                  >01892 779 110</a
+                >
+              </li>
+              <li>
+                Australia:
+                <a class="nobr" href="tel:02-8310-9990" dir="ltr"
+                  >02 8310 9990</a
+                >
+              </li>
+              <li>
+                France:
+                <a class="nobr" href="tel:01-70-79-13-95" dir="ltr"
+                  >01 70 79 13 95</a
+                >
+              </li>
+              <li>
+                USA:
+                <a class="nobr" href="tel:+1-646-400-6655" dir="ltr"
+                  >+1-646-400-6655</a
+                >
+              </li>
+              <li>
+                Japan:
+                <a class="nobr" href="tel:03-4579-0677" dir="ltr"
+                  >03 4579 0677</a
+                >
+              </li>
+              <li>
+                Overseas:
+                <a class="nobr" href="tel:+44-1892-779110" dir="ltr"
+                  >+44 1892 779110</a
+                >
+              </li>
+              <li class="other-enquiries">
+                For all other enquiries:
+                <a class="nobr" href="tel:01892-481-781" dir="ltr"
+                  >01892 481 781</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="f-col">
+          <h3>About Us</h3>
+          <ul class="f-col-content">
+            <li>
+              <a href="https://www.childrensalon.com/the-store"
+                >Visiting Our Outlet</a
+              >
+            </li>
+            <li><a href="https://www.childrensalon.com/history">History</a></li>
+            <li><a href="/the-team/">Meet The Team</a></li>
+            <li>
+              <a
+                href="https://www.childrensalon.com/about-us"
+                class="j-about-us"
+                >About Us</a
+              >
+            </li>
+            <li><a href="https://www.childrensalon.com/careers">Careers</a></li>
+            <li>
+              <a href="https://www.childrensalon.com/affiliates">Affiliates</a>
+            </li>
+            <li><a href="/our-story/">Fashion Fairytale</a></li>
+            <li><a href="/gender-pay-gap-report/">Gender Pay Gap Report</a></li>
+            <li>
+              <a href="/modern-day-slavery-report/">Modern Slavery Report</a>
+            </li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h3>Get The Newsletter</h3>
+          <div class="f-col-content">
+            <form
+              name="subscription"
+              method="post"
+              action="https://www.childrensalon.com/newsletter/subscribe"
+              class="form-subscribe required-entry j-ajax-form-reset"
+              autocomplete="off"
+              novalidate="novalidate"
+              data-cs="formValidate:ajaxForm"
+            >
+              <input
+                type="hidden"
+                name="subscription[source]"
+                value="footer_subscription_form"
+              />
+              <span class="form-label"
+                >Find out about the latest offers from Childrensalon</span
+              >
+              <div class="form-cols">
+                <div class="flex items-end">
+                  <div class="input-col">
+                    <label class="input-box">
+                      <span class="label"> Sign up to our newsletter </span>
+                      <input
+                        type="email"
+                        name="subscription[email]"
+                        required="required"
+                        class="
+                          required-entry
+                          input-text
+                          validate-email validate-length
+                          maximum-length-255
+                        "
+                        autocomplete="email"
+                        placeholder="Your email"
+                      />
+                    </label>
+                  </div>
+                  <div class="btn-col">
+                    <button type="submit" class="btn btn-full">
+                      <span>
+                        <svg data-cs="svgLoader" class="lazyloaded">
+                          <use
+                            xlink:href="./icon.svg#svgs-arrow-right-thin"
+                          ></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer mb-20">
+        <a
+          href="https://www.childrensalon.com/rewards/landing"
+          class="footer-mobile-info-bar xl:hidden"
+          >Join Childrensalon Rewards</a
+        >
+        <ul class="bottom-footer flex gap-20 justify-between items-center">
+          <li class="social">
+            <ul class="flex leading-0">
+              <li class="">
+                <a
+                  rel="noopener"
+                  href="https://www.facebook.com/childrensalon"
+                  title="Facebook"
+                  target="_blank"
+                >
+                  <svg class="icon lazyloaded" data-cs="svgLoader">
+                    <use xlink:href="./icon.svg#svgs-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="lg:ml-6">
+                <a
+                  rel="noopener"
+                  href="https://twitter.com/childrensalon"
+                  title="Twitter"
+                  target="_blank"
+                >
+                  <svg class="icon lazyloaded" data-cs="svgLoader">
+                    <use xlink:href="./icon.svg#svgs-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="lg:ml-6">
+                <a
+                  rel="noopener"
+                  href="https://instagram.com/childrensalon"
+                  title="Instagram"
+                  target="_blank"
+                >
+                  <svg class="icon lazyloaded" data-cs="svgLoader">
+                    <use xlink:href="./icon.svg#svgs-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="lg:ml-6">
+                <a
+                  rel="noopener"
+                  href="https://www.pinterest.com/childrensalon"
+                  title="Pinterest"
+                  target="_blank"
+                >
+                  <svg class="icon lazyloaded" data-cs="svgLoader">
+                    <use xlink:href="./icon.svg#svgs-pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="lg:ml-6">
+                <a
+                  rel="noopener"
+                  href="https://www.youtube.com/user/childrensalon"
+                  title="Youtube"
+                  target="_blank"
+                >
+                  <svg class="icon lazyloaded" data-cs="svgLoader">
+                    <use xlink:href="./icon.svg#svgs-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="xl:hidden">
+            <div class="cs-sustainability-desktop-links">
+              <h3>
+                <a
+                  href="https://www.childrensalon.com/sustainability"
+                  class="link"
+                >
+                  <svg
+                    class="icon icon-footer-sustainability lazyloaded"
+                    data-cs="svgLoader"
+                  >
+                    <use
+                      xlink:href="./icon.svg#svgs-footer-sustainability"
+                    ></use>
+                  </svg>
+                  <span>New</span> The Earth Edit
+                </a>
+              </h3>
+            </div>
+          </li>
+          <li class="item-bullet">•</li>
+          <li class="mobile-links xl:hidden">
+            <ul>
+              <li>
+                <a href="https://www.childrensalon.com/delivery-returns"
+                  >Delivery &amp; Returns</a
+                >
+              </li>
+              <li><a href="/contact-us/">Contact Us</a></li>
+              <li>
+                <a href="https://www.childrensalon.com/our-story"
+                  >Fashion Fairytale</a
+                >
+              </li>
+              <li>
+                <a href="https://www.childrensalon.com/size-guide"
+                  >Size Guide</a
+                >
+              </li>
+              <li>
+                <a href="https://www.childrensalon.com/gender-pay-gap-report"
+                  >Gender Pay Gap Report</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="https://www.childrensalon.com/careers">Careers</a>
+              </li>
+              <li>
+                <a href="https://www.childrensalon.com/privacy" class="privacy"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="https://www.childrensalon.com/terms" class="terms"
+                  >Terms</a
+                >
+              </li>
+              <li><a href="https://www.childrensalon.com/help">Help</a></li>
+              <li>
+                <a
+                  href="https://www.childrensalon.com/modern-day-slavery-report"
+                  >Modern Slavery Report</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="xl:hidden">
+            <div class="footer-badges mobileapp-hide">
+              <p class="title">Childrensalon App available on</p>
+              <div class="container">
+                <a
+                  href="https://itunes.apple.com/app/apple-store/id1301946839?pt=118679525&amp;ct=landing%20page&amp;mt=8"
+                  class="button button-apple"
+                  target="_blank"
+                >
+                  <svg class="icon apple-icon lazyloaded" data-cs="svgLoader">
+                    <use xlink:href="./icon.svg#svgs-apple"></use>
+                  </svg>
+                  <span
+                    >Download on the
+                    <span>App Store</span>
+                  </span>
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.childrensalon.app"
+                  class="button button-android"
+                  target="_blank"
+                >
+                  <svg class="icon android-icon lazyloaded" data-cs="svgLoader">
+                    <use xlink:href="./icon.svg#svgs-android"></use>
+                  </svg>
+                  <span>GET IT ON<span> Google Play</span> </span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="copy">
+            © Copyright
+            <a href="https://www.childrensalon.com/">Childrensalon 2021</a>,
+            <br class="lg:hidden" />
+            all rights reserved.
+          </li>
+          <li class="item-bullet">•</li>
+          <li class="cms-link">
+            <a href="https://www.childrensalon.com/terms">Terms</a>
+          </li>
+          <li class="item-bullet">•</li>
+          <li class="cms-link">
+            <a href="https://www.childrensalon.com/privacy">Privacy</a>
+          </li>
+          <li class="item-bullet">•</li>
+          <li class="cards">
+            <img
+              data-srcset="https://cdn.childrensalon.com/images/footer/payment-methods.png 2x, https://cdn.childrensalon.com/images/footer/payment-methods@1x.png 1x"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              class="ls-is-cached lazyloaded"
+              alt=""
+              srcset="
+                https://cdn.childrensalon.com/images/footer/payment-methods.png    2x,
+                https://cdn.childrensalon.com/images/footer/payment-methods@1x.png 1x
+              "
+            />
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="swipe-menu-wrapper">
+      <div class="swipe-menu">
+        <div class="welcome-container">
+          <span class="title">Welcome</span>
+          <ul class="links">
+            <li>
+              <a
+                href="/customer/account/login/"
+                title="Sign In"
+                data-popup-name="login-popup"
+                data-cs="loginRegisterClick"
+                >Sign In</a
+              >
+            </li>
+            <li>
+              <a
+                href="/customer/account/create"
+                title="Create Account"
+                data-popup-name="register-popup"
+                data-cs="loginRegisterClick"
+                >Create Account</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-topmenu desktop-hide">
+          <ul class="mobile-menu" data-swipe-position=".mobile-topmenu">
+            <li class="top-level level0 parent">
+              <a href="/new-in/"> <span>What's New</span> </a>
+              <script type="text/template" class="dropdown-template">
+                <ul class="level0 mobile-menu mobile-dropdown"> <li><span class="dropdown-back desktop-hide"><svg data-cs="svgLoader"><use xlink:href="./icon.svg#svgs-arrow-left-thin"></use></svg>Back to Main Menu</span></li> <li><a href="/new-in/?type=landing" rel="nofollow"> What&#039;s New</a></li> <li><a href="/new-in/?type=week" rel="nofollow"> Last 7 Days</a></li> <li><a href="/new-in/?type=month" rel="nofollow"> Last 4 Weeks</a></li> <li><a href="/previews/" rel="nofollow"> Coming Soon</a></li> </ul>
+              </script>
+              <!---->
+            </li>
+            <li class="top-level level0 parent">
+              <a href="/baby/landing"> <span>Baby</span> </a>
+              <script type="text/template" class="dropdown-template">
+                <div class="level0 dropdown mobile-menu mobile-dropdown"> <span class="dropdown-back desktop-hide"><svg data-cs="svgLoader"><use xlink:href="./icon.svg#svgs-arrow-left-thin"></use></svg>Back to Main Menu</span> <div class="dropdown-inner"> <div class="col-1"> <p class="title mtitle" data-title="By Category">By Product</p> <div class="dropdown-links jm-dropdown-links "> <a class="category-level-2" href="/baby/baby-accessories" rel="nofollow"> Baby Accessories</a> <a class="category-level-2" href="/baby/baby-bags" rel="nofollow"> Baby Bags</a> <a class="category-level-2" href="/baby/baby-care" rel="nofollow"> Baby Care</a> <a class="category-level-2" href="/baby/baby-gifts-toys" rel="nofollow"> Baby Gifts &amp; Toys</a> <a class="category-level-2" href="/baby/baby-nests-sleepbags" rel="nofollow"> Baby Nests &amp; Sleepbags</a> <a class="category-level-2" href="/baby/baby-outfits" rel="nofollow"> Baby Outfits</a> <a class="category-level-2" href="/baby/babysuits" rel="nofollow"> Babysuits</a> <a class="category-level-2" href="/baby/blankets-shawls" rel="nofollow"> Blankets &amp; Shawls</a> <a class="category-level-2" href="/baby/carnival-party-costumes" rel="nofollow"> Carnival &amp; Party Costumes</a> <a class="category-level-2" href="/baby/christening-baptism" rel="nofollow"> Christening &amp; Baptism</a> <a class="category-level-2" href="/baby/coats-outerwear" rel="nofollow"> Coats &amp; Outerwear</a> <a class="category-level-2" href="/baby/dresses-skirts" rel="nofollow"> Dresses &amp; Skirts</a> </div><div class="dropdown-links jm-dropdown-links"> <a class="category-level-2" href="/baby/hats" rel="nofollow"> Hats</a> <a class="category-level-2" href="/baby/multipacks" rel="nofollow"> Multipacks</a> <a class="category-level-2" href="/baby/nightwear-underwear" rel="nofollow"> Nightwear &amp; Underwear</a> <a class="category-level-2" href="/baby/pushchairs" rel="nofollow"> Pushchairs</a> <a class="category-level-2" href="/shoes/baby-toddler" rel="nofollow"> Shoes</a> <a class="category-level-2" href="/baby/swimwear" rel="nofollow"> Swimwear</a> <a class="category-level-2" href="/baby/tops" rel="nofollow"> Tops</a> <a class="category-level-2" href="/baby/trousers-shorts" rel="nofollow"> Trousers &amp; Shorts</a> </div> </div> <div class="col-2"> <p class="title mtitle" data-title="page.navigation_menu.age_filter_title"> By Age </p> <div class="dropdown-links"> <a href="https://www.childrensalon.com/baby?f=1013" rel="nofollow"> Premature </a> <a href="https://www.childrensalon.com/baby?f=1007" rel="nofollow"> 0 mth </a> <a href="https://www.childrensalon.com/baby?f=1008" rel="nofollow"> 1 mth </a> <a href="https://www.childrensalon.com/baby?f=1011" rel="nofollow"> 3 mth </a> <a href="https://www.childrensalon.com/baby?f=1015" rel="nofollow"> 6 mth </a> <a href="https://www.childrensalon.com/baby?f=1014" rel="nofollow"> 9 mth </a> <a href="https://www.childrensalon.com/baby?f=1035" rel="nofollow"> 12 mth </a> <a href="https://www.childrensalon.com/baby?f=1033" rel="nofollow"> 18 mth </a> <a href="https://www.childrensalon.com/baby?f=1012" rel="nofollow"> 2 yr </a> <a class="view-all-link" href="https://www.childrensalon.com/baby" data-title="View all"> View All </a></div> </div> <div class="col-2"> <p class="title mtitle">Discover</p> <div class="dropdown-links"> <a href="/christening-baptism" rel="nofollow"> Christening &amp; Baptism</a> <a href="/special-occasion" rel="nofollow"> Special Occasion</a> <a href="/into-the-woods" rel="nofollow"> Into the Woods</a> <a href="/snow-shop" rel="nofollow"> Snow</a> <a href="/everyday-essentials" rel="nofollow"> Everyday Essentials</a> <a href="/earth-friendly" rel="nofollow"> Earth Friendly</a> <a href="/summer-shop/baby" rel="nofollow"> Summer</a> <a href="/wedding" rel="nofollow"> Wedding</a> <a href="/spotlight-on-spain" rel="nofollow"> Spotlight on Spain</a> </div> </div> <a class="menu-banner mobile-hide" href="https://www.childrensalon.com/designer/childrensalon-essentials"> <img alt="" class="lazyload" data-sizes="auto" data-srcset="//cdn.childrensalon.com/media/adminforms/category_banner/cache/1/cache/365x880/5e06319eda06f020e43594a9c230972d/b/a/baby_-_cs_essentials_1.jpg 365w, //cdn.childrensalon.com/media/adminforms/category_banner/cache/1/cache/730x1760/5e06319eda06f020e43594a9c230972d/b/a/baby_-_cs_essentials_1.jpg 730w" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"> <span class="menu-banner-text" style="color:#000000;font-size:1.6em;" >Childrensalon Essentials</span> <span class="menu-banner-shop">Shop Now</span> </a> </div> </div>
+              </script>
+            </li>
+
+            <li class="top-level level0 parent">
+              <a href="/girl/landing"> <span>Girl</span> </a>
+              <script type="text/template" class="dropdown-template">
+                <div class="level0 dropdown mobile-menu mobile-dropdown"> <span class="dropdown-back desktop-hide"><svg data-cs="svgLoader"><use xlink:href="./icon.svg#svgs-arrow-left-thin"></use></svg>Back to Main Menu</span> <div class="dropdown-inner"> <div class="col-1"> <p class="title mtitle" data-title="By Category">By Product</p> <div class="dropdown-links jm-dropdown-links "> <a class="category-level-2" href="/girl/accessories" rel="nofollow"> Accessories</a> <a class="category-level-2" href="/girl/activewear" rel="nofollow"> Activewear</a> <a class="category-level-2" href="/girl/bags" rel="nofollow"> Bags</a> <a class="category-level-2" href="/girl/coats-jackets" rel="nofollow"> Coats &amp; Jackets</a> <a class="category-level-2" href="/girl/dresses" rel="nofollow"> Dresses</a> <a class="category-level-2" href="/girl/dressing-up-costume" rel="nofollow"> Dressing-Up-Costume</a> <a class="category-level-2" href="/girl/hats" rel="nofollow"> Hats</a> <a class="category-level-2" href="/girl/multipacks" rel="nofollow"> Multipacks</a> <a class="category-level-2" href="/girl/nightwear-underwear" rel="nofollow"> Nightwear &amp; Underwear</a> <a class="category-level-2" href="/girl/outfits" rel="nofollow"> Outfits</a> <a class="category-level-2" href="/girl/playsuits-jumpsuits" rel="nofollow"> Playsuits &amp; Jumpsuits</a> <a class="category-level-2" href="/shoes?gender=girl" rel="nofollow"> Shoes</a> </div><div class="dropdown-links jm-dropdown-links"> <a class="category-level-2" href="/girl/shorts" rel="nofollow"> Shorts</a> <a class="category-level-2" href="/girl/skirts" rel="nofollow"> Skirts</a> <a class="category-level-2" href="/girl/swimwear" rel="nofollow"> Swimwear</a> <a class="category-level-2" href="/girl/technical-snow-wear" rel="nofollow"> Technical Snow Wear</a> <a class="category-level-2" href="/girl/tops" rel="nofollow"> Tops</a> <a class="category-level-2" href="/girl/tracksuits" rel="nofollow"> Tracksuits</a> <a class="category-level-2" href="/girl/trousers-leggings" rel="nofollow"> Trousers &amp; Leggings</a> </div> </div> <div class="col-2"> <p class="title mtitle" data-title="page.navigation_menu.age_filter_title"> By Age </p> <div class="dropdown-links"> <a href="https://www.childrensalon.com/girl?f=1013" rel="nofollow"> Premature </a> <a href="https://www.childrensalon.com/girl?f=1007" rel="nofollow"> 0 mth </a> <a href="https://www.childrensalon.com/girl?f=1008" rel="nofollow"> 1 mth </a> <a href="https://www.childrensalon.com/girl?f=1011" rel="nofollow"> 3 mth </a> <a href="https://www.childrensalon.com/girl?f=1015" rel="nofollow"> 6 mth </a> <a href="https://www.childrensalon.com/girl?f=1014" rel="nofollow"> 9 mth </a> <a href="https://www.childrensalon.com/girl?f=1035" rel="nofollow"> 12 mth </a> <a href="https://www.childrensalon.com/girl?f=1033" rel="nofollow"> 18 mth </a> <a href="https://www.childrensalon.com/girl?f=1012" rel="nofollow"> 2 yr </a> <a href="https://www.childrensalon.com/girl?f=1034" rel="nofollow"> 3 yr </a> <a href="https://www.childrensalon.com/girl?f=1005" rel="nofollow"> 4 yr </a> <a href="https://www.childrensalon.com/girl?f=1003" rel="nofollow"> 5 yr </a> </div><div class="dropdown-links jm-dropdown-links"> <a href="https://www.childrensalon.com/girl?f=1006" rel="nofollow"> 6 yr </a> <a href="https://www.childrensalon.com/girl?f=1002" rel="nofollow"> 7 - 8 yr </a> <a href="https://www.childrensalon.com/girl?f=1004" rel="nofollow"> 9 - 10 yr </a> <a href="https://www.childrensalon.com/girl?f=1010" rel="nofollow"> 11 - 12 yr </a> <a href="https://www.childrensalon.com/girl?f=1016" rel="nofollow"> 13 - 14 yr </a> <a href="https://www.childrensalon.com/girl?f=1009" rel="nofollow"> 15 - 16 yr </a> <a href="https://www.childrensalon.com/girl?f=1017" rel="nofollow"> 16+ yr </a> <a class="view-all-link" href="https://www.childrensalon.com/girl" data-title="View all"> View All </a></div> </div> <div class="col-2"> <p class="title mtitle">Discover</p> <div class="dropdown-links"> <a href="/special-occasion" rel="nofollow"> Special Occasion</a> <a href="/into-the-woods" rel="nofollow"> Into the Woods</a> <a href="/snow-shop" rel="nofollow"> Snow</a> <a href="/everyday-essentials" rel="nofollow"> Everyday Essentials</a> <a href="/earth-friendly" rel="nofollow"> Earth Friendly</a> <a href="/summer-shop/girl" rel="nofollow"> Summer</a> <a href="/wedding" rel="nofollow"> Wedding</a> <a href="/spotlight-on-spain" rel="nofollow"> Spotlight on Spain</a> </div> </div> <a class="menu-banner mobile-hide" href="https://www.childrensalon.com/designer/moschino?f=1002-1003-1004-1005-1006-1010-1016&amp;gender=girl-unisex"> <img alt="" class="lazyload" data-sizes="auto" data-srcset="//cdn.childrensalon.com/media/adminforms/category_banner/cache/1/cache/365x880/5e06319eda06f020e43594a9c230972d/g/i/girl_-_levis_4.jpg 365w, //cdn.childrensalon.com/media/adminforms/category_banner/cache/1/cache/730x1760/5e06319eda06f020e43594a9c230972d/g/i/girl_-_levis_4.jpg 730w" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"> <span class="menu-banner-text" style="color:#000000;font-size:1.6em;" >Moschino</span> <span class="menu-banner-shop">Shop Now</span> </a> </div> </div>
+              </script>
+            </li>
+            <li class="top-level level0 parent">
+              <a href="/boy/landing"> <span>Boy</span> </a>
+              <script type="text/template" class="dropdown-template">
+                <div class="level0 dropdown mobile-menu mobile-dropdown"> <span class="dropdown-back desktop-hide"><svg data-cs="svgLoader"><use xlink:href="./icon.svg#svgs-arrow-left-thin"></use></svg>Back to Main Menu</span> <div class="dropdown-inner"> <div class="col-1"> <p class="title mtitle" data-title="By Category">By Product</p> <div class="dropdown-links jm-dropdown-links "> <a class="category-level-2" href="/boy/accessories" rel="nofollow"> Accessories</a> <a class="category-level-2" href="/boy/activewear" rel="nofollow"> Activewear</a> <a class="category-level-2" href="/boy/bags" rel="nofollow"> Bags</a> <a class="category-level-2" href="/boy/coats-jackets" rel="nofollow"> Coats &amp; Jackets</a> <a class="category-level-2" href="/boy/dressing-up-costume" rel="nofollow"> Dressing-Up-Costume</a> <a class="category-level-2" href="/boy/hats" rel="nofollow"> Hats</a> <a class="category-level-2" href="/boy/mini-me" rel="nofollow"> Mini-Me</a> <a class="category-level-2" href="/boy/multipacks" rel="nofollow"> Multipacks</a> <a class="category-level-2" href="/boy/nightwear-underwear" rel="nofollow"> Nightwear &amp; Underwear</a> <a class="category-level-2" href="/boy/outfits" rel="nofollow"> Outfits</a> <a class="category-level-2" href="/shoes?gender=boy" rel="nofollow"> Shoes</a> <a class="category-level-2" href="/boy/shorts" rel="nofollow"> Shorts</a> </div><div class="dropdown-links jm-dropdown-links"> <a class="category-level-2" href="/boy/suits" rel="nofollow"> Suits</a> <a class="category-level-2" href="/boy/swimwear" rel="nofollow"> Swimwear</a> <a class="category-level-2" href="/boy/technical-snow-wear" rel="nofollow"> Technical Snow Wear</a> <a class="category-level-2" href="/boy/tops" rel="nofollow"> Tops</a> <a class="category-level-2" href="/boy/tracksuits" rel="nofollow"> Tracksuits</a> <a class="category-level-2" href="/boy/trousers" rel="nofollow"> Trousers</a> </div> </div> <div class="col-2"> <p class="title mtitle" data-title="page.navigation_menu.age_filter_title"> By Age </p> <div class="dropdown-links"> <a href="https://www.childrensalon.com/boy?f=1013" rel="nofollow"> Premature </a> <a href="https://www.childrensalon.com/boy?f=1007" rel="nofollow"> 0 mth </a> <a href="https://www.childrensalon.com/boy?f=1008" rel="nofollow"> 1 mth </a> <a href="https://www.childrensalon.com/boy?f=1011" rel="nofollow"> 3 mth </a> <a href="https://www.childrensalon.com/boy?f=1015" rel="nofollow"> 6 mth </a> <a href="https://www.childrensalon.com/boy?f=1014" rel="nofollow"> 9 mth </a> <a href="https://www.childrensalon.com/boy?f=1035" rel="nofollow"> 12 mth </a> <a href="https://www.childrensalon.com/boy?f=1033" rel="nofollow"> 18 mth </a> <a href="https://www.childrensalon.com/boy?f=1012" rel="nofollow"> 2 yr </a> <a href="https://www.childrensalon.com/boy?f=1034" rel="nofollow"> 3 yr </a> <a href="https://www.childrensalon.com/boy?f=1005" rel="nofollow"> 4 yr </a> <a href="https://www.childrensalon.com/boy?f=1003" rel="nofollow"> 5 yr </a> </div><div class="dropdown-links jm-dropdown-links"> <a href="https://www.childrensalon.com/boy?f=1006" rel="nofollow"> 6 yr </a> <a href="https://www.childrensalon.com/boy?f=1002" rel="nofollow"> 7 - 8 yr </a> <a href="https://www.childrensalon.com/boy?f=1004" rel="nofollow"> 9 - 10 yr </a> <a href="https://www.childrensalon.com/boy?f=1010" rel="nofollow"> 11 - 12 yr </a> <a href="https://www.childrensalon.com/boy?f=1016" rel="nofollow"> 13 - 14 yr </a> <a href="https://www.childrensalon.com/boy?f=1009" rel="nofollow"> 15 - 16 yr </a> <a href="https://www.childrensalon.com/boy?f=1017" rel="nofollow"> 16+ yr </a> <a class="view-all-link" href="https://www.childrensalon.com/boy" data-title="View all"> View All </a></div> </div> <div class="col-2"> <p class="title mtitle">Discover</p> <div class="dropdown-links"> <a href="/special-occasion" rel="nofollow"> Special Occasion</a> <a href="/into-the-woods" rel="nofollow"> Into the Woods</a> <a href="/snow-shop" rel="nofollow"> Snow</a> <a href="/everyday-essentials" rel="nofollow"> Everyday Essentials</a> <a href="/earth-friendly" rel="nofollow"> Earth Friendly</a> <a href="/summer-shop/boy" rel="nofollow"> Summer</a> <a href="/wedding" rel="nofollow"> Wedding</a> <a href="/spotlight-on-spain" rel="nofollow"> Spotlight on Spain</a> </div> </div> <a class="menu-banner mobile-hide" href="https://www.childrensalon.com/designer/levis?f=1002-1003-1004-1005-1006-1009-1010-1016-1017&amp;gender=boy"> <img alt="" class="lazyload" data-sizes="auto" data-srcset="//cdn.childrensalon.com/media/adminforms/category_banner/cache/1/cache/365x880/5e06319eda06f020e43594a9c230972d/b/o/boy_-_gucci_2.jpg 365w, //cdn.childrensalon.com/media/adminforms/category_banner/cache/1/cache/730x1760/5e06319eda06f020e43594a9c230972d/b/o/boy_-_gucci_2.jpg 730w" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"> <span class="menu-banner-text" style="color:#000000;font-size:1.6em;" >Levi's</span> <span class="menu-banner-shop">Shop Now</span> </a> </div> </div>
+              </script>
+            </li>
+            <li class="top-level level0 parent">
+              <a href="/teen/landing"> <span>Teen</span> </a>
+              <script type="text/template" class="dropdown-template">
+                <div class="level0 dropdown mobile-menu mobile-dropdown"> <span class="dropdown-back desktop-hide"><svg data-cs="svgLoader"><use xlink:href="./icon.svg#svgs-arrow-left-thin"></use></svg>Back to Main Menu</span> <div class="dropdown-inner"> <div class="col-1"> <p class="title mtitle" data-title="By Category">By Product</p> <div class="dropdown-links jm-dropdown-links "> <a class="category-level-2 category-link" href="/teen/boy" rel="nofollow"> Boy</a> <a class="category-level-3" href="/teen/boy/accessories-bags" rel="nofollow"> Accessories &amp; Bags</a> <a class="category-level-3" href="/teen/boy/activewear" rel="nofollow"> Activewear</a> <a class="category-level-3" href="/teen/boy/coats-jackets" rel="nofollow"> Coats &amp; Jackets</a> <a class="category-level-3" href="/teen/boy/nightwear-underwear" rel="nofollow"> Nightwear &amp; Underwear</a> <a class="category-level-3" href="/teen/boy/shoes" rel="nofollow"> Shoes</a> <a class="category-level-3" href="/teen/boy/suits" rel="nofollow"> Suits</a> <a class="category-level-3" href="/teen/boy/tops" rel="nofollow"> Tops</a> <a class="category-level-3" href="/teen/boy/tracksuits" rel="nofollow"> Tracksuits</a> <a class="category-level-3" href="/teen/boy/trousers-shorts" rel="nofollow"> Trousers &amp; Shorts</a> </div><div class="dropdown-links jm-dropdown-links"> <a class="category-level-2 category-link" href="/teen/girl" rel="nofollow"> Girl</a> <a class="category-level-3" href="/teen/girl/accessories-bags" rel="nofollow"> Accessories &amp; Bags</a> <a class="category-level-3" href="/teen/girl/activewear" rel="nofollow"> Activewear</a> <a class="category-level-3" href="/teen/girl/coats-jackets" rel="nofollow"> Coats &amp; Jackets</a> <a class="category-level-3" href="/teen/girl/dresses" rel="nofollow"> Dresses</a> <a class="category-level-3" href="/teen/girl/nightwear-underwear" rel="nofollow"> Nightwear &amp; Underwear</a> <a class="category-level-3" href="/teen/girl/shoes" rel="nofollow"> Shoes</a> <a class="category-level-3" href="/teen/girl/skirts" rel="nofollow"> Skirts</a> <a class="category-level-3" href="/teen/girl/tops" rel="nofollow"> Tops</a> <a class="category-level-3" href="/teen/girl/trousers-shorts" rel="nofollow"> Trousers &amp; Shorts</a> </div><div class="dropdown-links jm-dropdown-links"> </div><div class="dropdown-links jm-dropdown-links"> </div> </div> <div class="col-2"> <p class="title mtitle" data-title="page.navigation_menu.age_filter_title"> By Age </p> <div class="dropdown-links"> <a href="https://www.childrensalon.com/teen?f=1004" rel="nofollow"> 9 - 10 yr </a> <a href="https://www.childrensalon.com/teen?f=1010" rel="nofollow"> 11 - 12 yr </a> <a href="https://www.childrensalon.com/teen?f=1016" rel="nofollow"> 13 - 14 yr </a> <a href="https://www.childrensalon.com/teen?f=1009" rel="nofollow"> 15 - 16 yr </a> <a href="https://www.childrensalon.com/teen?f=1017" rel="nofollow"> 16+ yr </a> <a class="view-all-link" href="https://www.childrensalon.com/teen" data-title="View all"> View All </a></div> </div> <div class="teens-menu"> <a href="https://www.childrensalon.com/teen/" class="teens-banner teens-banner-type1 mobile-hide"> <div class="img-wrap"> <picture class="cs-picture lazyload-block"><source type="image/webp" sizes="395px" data-srcset="https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/01@1x.webp 395w, https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/01.webp 790w"><source sizes="395px" data-srcset="https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/01@1x.jpg 395w, https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/01.jpg 790w"><img class="lazyload" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></picture> </div> <div class="copy-wrap"> <span class="teens-banner-shop">Shop</span> <span class="teens-banner-text">Teens</span> </div> </a> <div class="teens-menu-flex-wrapper"> <a href="https://www.childrensalon.com/teen/girl/" class="teens-banner teens-banner-type2 mobile-hide"> <div class="img-wrap"> <picture class="cs-picture lazyload-block"><source type="image/webp" sizes="162px" data-srcset="https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/02@1x.webp 162w, https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/02.webp 324w"><source sizes="162px" data-srcset="https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/02@1x.jpg 162w, https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/02.jpg 324w"><img class="lazyload" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></picture> </div> <div class="copy-wrap"> <span class="teens-banner-shop">Shop</span> <span class="teens-banner-text">Girls</span> </div> </a> <a href="https://www.childrensalon.com/teen/boy/" class="teens-banner teens-banner-type2 mobile-hide"> <div class="img-wrap"> <picture class="cs-picture lazyload-block"><source type="image/webp" sizes="162px" data-srcset="https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/03@1x.webp 162w, https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/03.webp 324w"><source sizes="162px" data-srcset="https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/03@1x.jpg 162w, https://cdn.childrensalon.com/skin/frontend/default/childrensalon/images/teens/summer2021/03.jpg 324w"><img class="lazyload" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></picture> </div> <div class="copy-wrap"> <span class="teens-banner-shop">Shop</span> <span class="teens-banner-text">Boys</span> </div> </a> </div></div> </div> </div>
+              </script>
+            </li>
+            <li class="top-level level0 parent">
+              <a href="/designer/"> <span>Designer</span> </a>
+              <script type="text/template" class="dropdown-template">
+                <div class="level0 dropdown designer-dropdown mobile-menu mobile-dropdown focus-brand-dropdown"> <span class="dropdown-back desktop-hide"><svg data-cs="svgLoader"><use xlink:href="./icon.svg#svgs-arrow-left-thin"></use></svg>Back to Main Menu</span> <div class="dropdown-inner"> <div class="alphabet mobile-hide"> <a href="/designer/#dez-alfa-a">A</a> &nbsp; <a href="/designer/#dez-alfa-b">B</a> &nbsp; <a href="/designer/#dez-alfa-c">C</a> &nbsp; <a href="/designer/#dez-alfa-d">D</a> &nbsp; <a href="/designer/#dez-alfa-e">E</a> &nbsp; <a href="/designer/#dez-alfa-f">F</a> &nbsp; <a href="/designer/#dez-alfa-g">G</a> &nbsp; <a href="/designer/#dez-alfa-h">H</a> &nbsp; <a href="/designer/#dez-alfa-i">I</a> &nbsp; <a href="/designer/#dez-alfa-j">J</a> &nbsp; <a href="/designer/#dez-alfa-k">K</a> &nbsp; <a href="/designer/#dez-alfa-l">L</a> &nbsp; <a href="/designer/#dez-alfa-m">M</a> &nbsp; <a href="/designer/#dez-alfa-n">N</a> &nbsp; <a href="/designer/#dez-alfa-o">O</a> &nbsp; <a href="/designer/#dez-alfa-p">P</a> &nbsp; <a href="/designer/#dez-alfa-r">R</a> &nbsp; <a href="/designer/#dez-alfa-s">S</a> &nbsp; <a href="/designer/#dez-alfa-t">T</a> &nbsp; <a href="/designer/#dez-alfa-u">U</a> &nbsp; <a href="/designer/#dez-alfa-v">V</a> &nbsp; <a href="/designer/#dez-alfa-w">W</a> &nbsp; <a href="/designer/#dez-alfa-y">Y</a> &nbsp; <a href="/designer/#dez-alfa-z">Z</a> </div> <div class="cols"> <div class="dropdown-links jm-dropdown-links"> <a href="/designer/balmain">Balmain</a> <a href="/designer/bonpoint">Bonpoint</a> <a href="/designer/hugo-boss-kidswear">BOSS Kidswear</a> <a href="/designer/burberry">Burberry</a> <a href="/designer/childrensalon-occasions">Childrensalon Occasions</a> <a href="/designer/chloe">Chloé</a> <a href="/designer/dkny">DKNY</a> <a href="/designer/dolce-gabbana">Dolce &amp; Gabbana</a> <a href="/designer/emporio-armani">Emporio Armani</a> </div> <div class="dropdown-links jm-dropdown-links"> <a href="/designer/fendi">Fendi</a> <a href="/designer/givenchy">Givenchy Kids</a> <a href="/designer/gucci-childrens">Gucci</a> <a href="/designer/guess">Guess</a> <a href="/designer/kenzo">KENZO KIDS</a> <a href="/designer/mayoral">Mayoral</a> <a href="/designer/moncler-enfant">Moncler Enfant</a> <a href="/designer/monnalisa">Monnalisa</a> <a href="/designer/moschino">Moschino</a> </div> <div class="dropdown-links jm-dropdown-links"> <a href="/designer/patachou">Patachou</a> <a href="/designer/ralph-lauren">Ralph Lauren</a> <a href="/designer/stella-mccartney-kids">Stella McCartney Kids</a> <a href="/designer/tommy-hilfiger">Tommy Hilfiger</a> <a href="/designer/versace">Versace</a> <a class="btn-item " href="/designer/" data-title="View all"> View all 234 Designers </a> </div> </div> <div class="focus-designer mobile-hide"> <div class="focus-title">Brand Focus</div> <a class="focus-name" href="https://www.childrensalon.com/designer/childrensalon-essentials">Childrensalon Essentials</a> <a class="focus-img" href="https://www.childrensalon.com/designer/childrensalon-essentials"> <img alt="" data-sizes="auto" class="lazyload" data-srcset="//cdn.childrensalon.com/media/adminforms/ronisbtbrand/cache/1/cache/630x240/5e06319eda06f020e43594a9c230972d/c/s/cs_essentials.jpg 630w, //cdn.childrensalon.com/media/adminforms/ronisbtbrand/cache/1/cache/1260x480/5e06319eda06f020e43594a9c230972d/c/s/cs_essentials.jpg 1260w" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"> </a> <div class="focus-description"> Made with love from soft organic cotton, our Essentials collection is kind to the planet and your baby’s skin. </div> <a class="focus-link" href="https://www.childrensalon.com/designer/childrensalon-essentials">DISCOVER AND SHOP</a></div> </div> </div>
+              </script>
+            </li>
+            <li class="top-level level0 parent">
+              <a href="/shoes/landing"> <span>Shoes</span> </a>
+              <script type="text/template" class="dropdown-template">
+                <div class="level0 dropdown mobile-menu mobile-dropdown"> <span class="dropdown-back desktop-hide"><svg data-cs="svgLoader"><use xlink:href="./icon.svg#svgs-arrow-left-thin"></use></svg>Back to Main Menu</span> <div class="dropdown-inner"> <div class="col-1"> <p class="title mtitle" data-title="By Category">By Product</p> <div class="dropdown-links jm-dropdown-links "> <a class="category-level-2" href="/shoes/aqua-shoes" rel="nofollow"> Aqua Shoes</a> <a class="category-level-2" href="/shoes/baby-toddler" rel="nofollow"> Baby &amp; Toddler</a> <a class="category-level-2" href="/shoes/boots" rel="nofollow"> Boots</a> <a class="category-level-2" href="/shoes/brogues" rel="nofollow"> Brogues</a> <a class="category-level-2" href="/shoes/espadrille" rel="nofollow"> Espadrille</a> <a class="category-level-2" href="/shoes/flip-flops" rel="nofollow"> Flip-Flops</a> <a class="category-level-2" href="/shoes/jelly-shoes" rel="nofollow"> Jelly Shoes</a> <a class="category-level-2" href="/shoes/loafers-moccasins" rel="nofollow"> Loafers &amp; Moccasins</a> <a class="category-level-2" href="/shoes/occasion" rel="nofollow"> Occasion</a> <a class="category-level-2" href="/shoes/pumps-ballerinas" rel="nofollow"> Pumps &amp; Ballerinas</a> <a class="category-level-2" href="/shoes/sandals" rel="nofollow"> Sandals</a> <a class="category-level-2" href="/shoes/school-shoes" rel="nofollow"> School Shoes</a> </div><div class="dropdown-links jm-dropdown-links"> <a class="category-level-2" href="/shoes/sliders" rel="nofollow"> Sliders</a> <a class="category-level-2" href="/shoes/slippers" rel="nofollow"> Slippers</a> <a class="category-level-2" href="/shoes/traditional-shoes" rel="nofollow"> Traditional Shoes</a> <a class="category-level-2" href="/shoes/trainers" rel="nofollow"> Trainers</a> <a class="category-level-2" href="/shoes/wedges-heels" rel="nofollow"> Wedges &amp; heels</a> </div> </div> <div class="col-2"> <p class="title mtitle" data-title="page.navigation_menu.shoe_size_filter_title"> By Shoe Size </p> <div class="dropdown-links"> <a href="https://www.childrensalon.com/shoes?f=1961" rel="nofollow"> Baby (0-3 mth) </a> <a href="https://www.childrensalon.com/shoes?f=1957" rel="nofollow"> Baby (3-6 mth) </a> <a href="https://www.childrensalon.com/shoes?f=1959" rel="nofollow"> Baby (6-9 mth) </a> <a href="https://www.childrensalon.com/shoes?f=1960" rel="nofollow"> Baby (9-12 mth) </a> <a href="https://www.childrensalon.com/shoes?f=1958" rel="nofollow"> Baby (12-18 mth) </a> <a href="https://www.childrensalon.com/shoes?f=1962" rel="nofollow"> Baby (18-24 mth) </a> <a href="https://www.childrensalon.com/shoes?f=1964" rel="nofollow"> Baby (24-30 mth) </a> <a href="https://www.childrensalon.com/shoes?f=1943" rel="nofollow"> EU 17 (1 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1950" rel="nofollow"> EU 18 (2 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1956" rel="nofollow"> EU 19 (3 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1954" rel="nofollow"> EU 20 (4 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1952" rel="nofollow"> EU 21 (4.5 uk) </a> </div><div class="dropdown-links jm-dropdown-links"> <a href="https://www.childrensalon.com/shoes?f=1953" rel="nofollow"> EU 22 (5 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1945" rel="nofollow"> EU 23 (6 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1938" rel="nofollow"> EU 24 (7 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1940" rel="nofollow"> EU 25 (8 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1949" rel="nofollow"> EU 26 (8.5 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1935" rel="nofollow"> EU 27 (9 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1939" rel="nofollow"> EU 28 (10 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1948" rel="nofollow"> EU 29 (11 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1937" rel="nofollow"> EU 30 (12 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1946" rel="nofollow"> EU 31 (12.5 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1951" rel="nofollow"> EU 32 (13 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1944" rel="nofollow"> EU 33 (1 uk) </a> </div><div class="dropdown-links jm-dropdown-links"> <a href="https://www.childrensalon.com/shoes?f=1934" rel="nofollow"> EU 34 (2 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1933" rel="nofollow"> EU 35 (2.5 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1942" rel="nofollow"> EU 36 (3 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1941" rel="nofollow"> EU 37 (4 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1936" rel="nofollow"> EU 38 (5 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1955" rel="nofollow"> EU 39 (6 uk) </a> <a href="https://www.childrensalon.com/shoes?f=1947" rel="nofollow"> EU 40 (7 uk) </a> <a href="https://www.childrensalon.com/shoes?f=5538" rel="nofollow"> EU 41 (7.5 uk) </a> <a class="view-all-link" href="https://www.childrensalon.com/shoes" data-title="View all"> View All </a></div> </div> <div class="col-2"> <p class="title mtitle">By...</p> <div class="dropdown-links"> <a href="/shoes?dir=desc&amp;order=publish_date" rel="nofollow"> New In</a> <a href="/designer/shoes/" rel="nofollow"> Designer</a> <a href="/shoes?gender=boy" rel="nofollow"> Boy</a> <a href="/shoes?gender=girl" rel="nofollow"> Girl</a> </div> </div> <a class="menu-banner mobile-hide" href="https://www.childrensalon.com/designer/ugg-shoes"> <img alt="" class="lazyload" data-sizes="auto" data-srcset="//cdn.childrensalon.com/media/adminforms/category_banner/cache/1/cache/365x880/5e06319eda06f020e43594a9c230972d/s/h/shoes_-_ugg_3.jpg 365w, //cdn.childrensalon.com/media/adminforms/category_banner/cache/1/cache/730x1760/5e06319eda06f020e43594a9c230972d/s/h/shoes_-_ugg_3.jpg 730w" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"> <span class="menu-banner-text" style="color:#000000;font-size:1.6em;" >Ugg Australia</span> <span class="menu-banner-shop">Shop Now</span> </a> </div> </div>
+              </script>
+            </li>
+            <li class="top-level level0 desktop-hide">
+              <a href="/everyday-essentials">
+                <span>Everyday Essentials</span>
+              </a>
+            </li>
+            <li class="top-level level0 desktop-hide">
+              <a href="/snow-shop"> <span>Snow Shop</span> </a>
+            </li>
+            <li class="top-level level0 desktop-hide">
+              <a href="/earth-friendly"> <span>Earth Friendly</span> </a>
+            </li>
+            <li class="top-level level0 desktop-hide">
+              <a href="/special-occasion"> <span>Special Occasion</span> </a>
+            </li>
+            <li class="top-level level0">
+              <a href="/lifestyle"> <span>Lifestyle</span> </a>
+            </li>
+            <li class="top-level level0">
+              <a
+                href="https://www.childrensalonoutlet.com"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>Visit Outlet</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <span class="mtitle desktop-hide">My Account</span>
+        <ul class="mobile-menu account-mobile-menu">
+          <li class="no-display">
+            <a class="icon-cus-account" href="/account/">
+              <svg class="icon-cus lazyload" data-cs="svgLoader">
+                <use xlink:href="./icon.svg#svgs-account"></use>
+              </svg>
+              <span>My Account</span>
+            </a>
+          </li>
+          <li>
+            <a class="icon-cus-wish" href="/wishlist">
+              <svg class="icon-cus lazyloaded" data-cs="svgLoader">
+                <use xlink:href="./icon.svg#svgs-wish-main"></use>
+              </svg>
+              <span>Wishlist</span>
+            </a>
+          </li>
+          <!-- <li class="no-display">
+            <a class="icon-cus-myorders" href="/account/sales/">
+              <svg class="icon-cus lazyload" data-cs="svgLoader">
+                <use xlink:href="./icon.svg#svgs-myorders-channel"></use>
+              </svg>
+              <span>My Orders</span>
+            </a>
+          </li> -->
+          <li>
+            <a
+              class="icon-cus-delivery"
+              href="https://www.childrensalon.com/delivery-returns"
+            >
+              <svg class="icon-cus lazyloaded" data-cs="svgLoader">
+                <use xlink:href="./icon.svg#svgs-delivery-main"></use>
+              </svg>
+              <span>Delivery &amp; Returns</span>
+            </a>
+          </li>
+        </ul>
+        <span class="mtitle">My Settings</span>
+        <ul class="switcher-menu">
+          <li class="switcher-menu-item country-menu-item">
+            <div
+              class="switcher switcher-country ui-front switcher-prepare"
+              data-cs="switcher"
+              data-swipe-position=".country-menu-item"
+            >
+              <select
+                name="countrySelect"
+                class="country-select switcher-select country-select-switcher"
+                data-switcher-role="country"
+              ></select>
+              <span class="ui-selectmenu-button ui-selectmenu-button-waxwork">
+                <span class="ui-icon"></span>
+                <span
+                  class="ui-selectmenu-text switcher-flag i-flag-vn lazyloaded"
+                  >Vietnam</span
+                >
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

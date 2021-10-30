@@ -1,0 +1,90 @@
+.opened-menu::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.wrapper {
+  margin-top: 142.5px;
+}
+
+.directlinks {
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 0.6em;
+  }
+}
+
+.f-col {
+  h3 {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.286;
+    text-transform: uppercase;
+    padding: 0 0 1.4em;
+    margin: 0 0 1.4em;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  ul {
+    margin: 0 0 1.9em;
+  }
+
+  li {
+    margin: 0 0 0.7em;
+  }
+
+  ul + h3 {
+    border-top: 1px solid #e8e8e8;
+    padding-top: 1.4em;
+  }
+
+  .form-subscribe .form-cols {
+    margin: 1.875em 0 0;
+  }
+
+  .form-subscribe .input-box {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  .input-col {
+    flex: 1;
+  }
+
+  .label,
+  .input-box label {
+    color: #1b1b1a;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: text;
+    pointer-events: none;
+    order: -1;
+    margin-bottom: 1em;
+    display: block;
+  }
+
+  .form-subscribe .btn svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
+
+  .btn {
+    padding-top: calc(1.6rem - 2px);
+  }
+}
+
+.bottom-footer li.social .icon {
+  width: 1.8em;
+  height: 1.8em;
+}

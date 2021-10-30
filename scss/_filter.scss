@@ -1,0 +1,108 @@
+.block-layered-nav {
+  .filter-title {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0 9px;
+    font-size: 14px;
+    position: relative;
+    user-select: none;
+
+    .arrow-down,
+    .arrow-right {
+      position: relative;
+    }
+
+    .arrow-down:after,
+    .arrow-right:after,
+    .arrow-down:after,
+    .arrow-right:after {
+      right: 0;
+    }
+
+    .arrow-down:after,
+    .arrow-right:after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-left: 1px solid;
+      border-bottom: 1px solid;
+      border-right-color: currentColor;
+      border-top-color: currentColor;
+      transform: rotate(135deg);
+      position: absolute;
+      margin-top: -4px;
+      top: 50%;
+    }
+
+    .filter-title-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+  }
+
+  .filter-name {
+    margin-right: 5px;
+  }
+
+  .narrow-by-list.transition-arrow .arrow-down:after {
+    transition: transform 0.3s ease;
+  }
+
+  .all-filters {
+    li {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      font-size: 1.6rem;
+      margin: 1.6rem 0;
+      a::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 20px;
+        border-radius: 2px;
+        aspect-ratio: 1/1;
+        border: 1px solid #333;
+      }
+
+      input {
+        display: none;
+      }
+
+      input[type="checkbox"] + .label:before,
+      input[type="checkbox"] + label:before {
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background: #fff
+          url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIGZpbGw9IiNmZmYiPjxwYXRoIGQ9Ik0xMDIxIDE0MWwzIDE3LTMgMTctMTEgMTUtNzEwIDcxMi0xMCA3LTcgMi0xMiAxLTEyLTEtMTItNi04LTZMMTQgNjczIDMgNjU4bC0zLTE3IDMtMTkgMTEtMTQgMTUtMTAgMTctMyAxNyAzIDE2IDEwIDE5MiAxOTMgNjc2LTY3NiAxNC0xMCAxOS0zIDE3IDMgMTMgMTAgMTEgMTZ6Ii8+PC9zdmc+)
+          no-repeat 50%;
+        background-size: 13px;
+        will-change: border-color;
+        transition: border-color 0.2s ease-in-out;
+      }
+
+      input[type="checkbox"]:checked + .label:before,
+      input[type="checkbox"]:checked + label:before {
+        background-color: #1b1b1a;
+      }
+    }
+  }
+
+  .block-layered-nav .dd li {
+    padding: 23px 0 14px;
+    margin: 0 0 -23px;
+    font-size: 12px;
+    font-weight: 300;
+    display: none;
+    width: 100%;
+    break-inside: avoid;
+  }
+}
